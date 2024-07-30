@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.auth-card {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.auth-card.flipped {
+  transform: rotateX(360deg);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Add this to your global styles or component-specific styles */
+@media (max-width: 768px) {
+  .responsive-card {
+    width: 90%; /* Adjust as needed for your design */
+  }
+}
+.responsive-card {
+  width: 50%; /* Adjust as needed for your design */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
